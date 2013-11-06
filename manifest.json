@@ -3,7 +3,7 @@
       "exclude_globs": [  ],
       "exclude_matches": [  ],
       "include_globs": [ "https://community.rallydev.com/#*" ],
-      "js": [ "jquery-2.0.2.min.js", "script.js" ],
+      "js": [ "jquery-2.0.3.min.js", "script.js" ],
       "matches": [ "http://*/*", "https://*/*" ],
       "run_at": "document_start"
    } ],
@@ -12,5 +12,5 @@
    "description": "Copy tasc to cvs trank name",
    "key": "z5w7mhKTDxRQJeP+QpLsKa1M6+BKLBNgDUmZIaZpr+o=",
    "name": "Rallydev copy vcs name",
-   "version": "1.0.11"
+   "version": "1.0.12"
 }
