@@ -25,7 +25,7 @@
 			var id = $id.text();
 			var us = $('#detail_table th:has(>div.field-label:contains("Work Product:"))').next().children('a').text();
 			var name = $('#detail_table th:has(>div.field-label:contains("Name:"))').next().text();
-			var result = us.replace('[Continued]', '').replace(/^([^:]+): /, "$1_"+id+'_')+'_'+name;
+			var result = us.replace(/\[Continued(: \d+)?\]/, '').replace(/^([^:]+): /, "$1_"+id+'_')+'_'+name;
 			result = result.replace(/(does|do)n't/gi, '$1 not');
 			result = result.replace(/[+:\s\/]+/g, '-');
 			result = result.replace(/_-|-_/g, '_');
