@@ -27,7 +27,7 @@
 			var name = $('#detail_table th:has(>div.field-label:contains("Name:"))').next().text();
 			var result = us.replace(/\[Continued(: \d+)?\]/, '').replace(/^([^:]+): /, "$1_"+id+'_')+'_'+name;
 			result = result.replace(/(does|do)n't/gi, '$1 not');
-			result = result.replace(/[+:\s\/]+/g, '-');
+			result = result.replace(/[+:\s,\/]+/g, '-');
 			result = result.replace(/_-|-_/g, '_');
 			result = result.replace(/--{2,}/g, '-');
 
